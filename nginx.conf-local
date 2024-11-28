@@ -1,7 +1,7 @@
 server {
     listen 8082;
 
-    root /mnt/c/user/dev/lab/codepreneuring.com/todo/client;
+    root /mnt/c/user/dev/lab/codepreneuring/todo/client;
     index index.html;
 
     location / {
