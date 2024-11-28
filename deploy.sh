@@ -1,0 +1,2 @@
+rsync -av -e 'ssh' ./client ./server nginx.conf --exclude 'server/node_modules' --exclude 'server/package-lock.json' --exclude 'server/.env' user@46.101.132.192:~/todo/ \
+&& ssh user@46.101.132.192 'source ~/.nvm/nvm.sh && pm2 reload all'
